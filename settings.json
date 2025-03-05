@@ -1,4 +1,9 @@
 {
+    "theme": {
+        "mode": "system",
+        "dark": "JetBrains New Dark",
+        "light": "Ayu Light"
+    },
     "icon_theme": "Zed (Default)",
     "base_keymap": "JetBrains",
     "buffer_font_family": "JetBrains Mono",
@@ -77,20 +82,6 @@
     },
     "auto_update": true,
     "terminal": {
-        // What shell to use when opening a terminal. May take 3 values:
-        // 1. Use the system's default terminal configuration in /etc/passwd
-        //      "shell": "system"
-        // 2. A program:
-        //      "shell": {
-        //        "program": "sh"
-        //      }
-        // 3. A program with arguments:
-        //     "shell": {
-        //         "with_arguments": {
-        //           "program": "/bin/bash",
-        //           "args": ["--login"]
-        //         }
-        //     }
         "shell": "system",
         "dock": "bottom",
         "default_height": 320,
