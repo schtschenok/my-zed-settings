@@ -41,21 +41,21 @@
     "seed_search_query_from_cursor": "always",
     "project_panel": {
         "button": true,
-        "default_width": 240
+        "default_width": 320
     },
     "outline_panel": {
         "button": true,
-        "default_width": 240
+        "default_width": 320
     },
     "collaboration_panel": {
         "button": false,
-        "default_width": 240
+        "default_width": 320
     },
     "chat_panel": {
-        "default_width": 240
+        "default_width": 320
     },
     "git_panel": {
-        "default_width": 240
+        "default_width": 320
     },
     "notification_panel": {
         "button": false,
