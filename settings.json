@@ -132,6 +132,20 @@
         "odin": true,
         "toml": true,
         "html": true,
-        "zig": true
+        "zig": true,
+        "ruff": true
+    },
+    "lsp": {
+        "pyright": {
+            "settings": {
+                "python.analysis": {
+                    "diagnosticMode": "workspace",
+                    "typeCheckingMode": "standard"
+                },
+                "python": {
+                    "pythonPath": ".venv/Scripts/python"
+                }
+            }
+        }
     }
 }
