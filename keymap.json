@@ -18,6 +18,7 @@
             "shift shift": "project_symbols::Toggle",
             "alt-t": "terminal_panel::ToggleFocus",
             "ctrl-r": "task::Rerun",
+            "ctrl-shift-r": "task::Spawn",
             "ctrl-t": "file_finder::Toggle",
             "ctrl-p": "command_palette::Toggle",
             "ctrl-1": ["pane::ActivateItem", 0],
