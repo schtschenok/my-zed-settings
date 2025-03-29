@@ -1,169 +1,175 @@
-{
-    "features": {
-        "edit_prediction_provider": "zed"
-    },
-    "theme": {
-        "mode": "system",
-        "dark": "JetBrains New Dark",
-        "light": "Ayu Light"
-    },
-    "icon_theme": "Zed (Default)",
-    "base_keymap": null,
-    "buffer_font_family": "JetBrains Mono",
-    "buffer_font_fallbacks": ["JetbrainsMono NerdFont", "Zed Plex Mono"],
-    "buffer_font_features": {
-        "calt": true
-    },
-    "buffer_font_size": 16,
-    "buffer_font_weight": 400,
-    "buffer_line_height": "comfortable",
-    "ui_font_family": "JetBrains Mono",
-    "ui_font_fallbacks": ["JetbrainsMono NerdFont", "Zed Plex Mono"],
-    "ui_font_features": {
-        "calt": false
-    },
-    "ui_font_weight": 400,
-    "ui_font_size": 16,
-    "unnecessary_code_fade": 0.3,
-    "multi_cursor_modifier": "cmd_or_ctrl",
-    "hover_popover_delay": 250,
-    "cursor_blink": false,
-    "show_wrap_guides": false,
-    "always_treat_brackets_as_autoclosed": false,
-    "show_edit_predictions": false,
-    "scrollbar": {
-        "show": "always",
-        "axes": {
-            "horizontal": false,
-            "vertical": true
+[
+    {
+        "bindings": {
+            // JetBrains
+            // "ctrl-alt-s": "zed::OpenSettings",
+            // "ctrl-alt-k": "zed::OpenKeymap"
         }
     },
-    "scroll_beyond_last_line": "vertical_scroll_margin",
-    "vertical_scroll_margin": 3,
-    "scroll_sensitivity": 1.0,
-    "seed_search_query_from_cursor": "selection",
-    "project_panel": {
-        "button": true,
-        "default_width": 320
-    },
-    "outline_panel": {
-        "button": true,
-        "default_width": 320
-    },
-    "collaboration_panel": {
-        "button": false,
-        "default_width": 320
-    },
-    "chat_panel": {
-        "default_width": 320
-    },
-    "git_panel": {
-        "default_width": 320
-    },
-    "notification_panel": {
-        "button": false,
-        "default_width": 320
-    },
-    "assistant": {
-        "version": "2",
-        "default_width": 480,
-        "default_height": 320,
-        "default_model": {
-            "provider": "zed.dev",
-            "model": "claude-3-7-sonnet-latest"
+    {
+        "context": "Workspace",
+        "bindings": {
+            // JetBrains
+            // "ctrl-shift-n": "file_finder::Toggle",
+            // "ctrl-shift-a": "command_palette::Toggle",
+            "ctrl-alt-shift-n": "project_symbols::Toggle",
+            "ctrl-e": "tab_switcher::Toggle",
+            // My stuff
+            "shift shift": "project_symbols::Toggle",
+            "alt-t": "terminal_panel::ToggleFocus",
+            "ctrl-r": "task::Rerun",
+            "ctrl-t": "file_finder::Toggle",
+            "ctrl-p": "command_palette::Toggle",
+            "ctrl-1": ["pane::ActivateItem", 0],
+            "ctrl-2": ["pane::ActivateItem", 1],
+            "ctrl-3": ["pane::ActivateItem", 2],
+            "ctrl-4": ["pane::ActivateItem", 3],
+            "ctrl-5": ["pane::ActivateItem", 4],
+            "ctrl-6": ["pane::ActivateItem", 5],
+            "ctrl-7": ["pane::ActivateItem", 6],
+            "ctrl-8": ["pane::ActivateItem", 7],
+            "ctrl-9": ["pane::ActivateItem", 8],
+            "ctrl-0": "pane::ActivateLastItem",
+            "alt-1": "workspace::ToggleLeftDock",
+            "alt-2": "project_panel::ToggleFocus",
+            "alt-3": "outline_panel::ToggleFocus",
+            "alt-4": "workspace::ToggleRightDock",
+            "alt-5": null,
+            "alt-6": null,
+            "alt-7": null,
+            "alt-8": null,
+            "alt-9": null,
+            "alt-0": null,
+            "ctrl-alt-left": "workspace::ActivatePaneLeft",
+            "ctrl-alt-right": "workspace::ActivatePaneRight",
+            "ctrl-alt-j": "workspace::ActivatePaneLeft",
+            "ctrl-alt-k": "workspace::ActivatePaneRight"
         }
     },
-    "enable_language_server": true,
-    "autosave": { "after_delay": { "milliseconds": 500 } },
-    "format_on_save": "on",
-    "formatter": "auto",
-    "hard_tabs": false,
-    "tab_size": 4,
-    "telemetry": {
-        "diagnostics": true,
-        "metrics": true
-    },
-    "auto_update": true,
-    "terminal": {
-        "shell": "system",
-        "dock": "bottom",
-        "default_height": 480,
-        "max_scroll_history_lines": 100000
-    },
-    "languages": {
-        "C": {
-            "format_on_save": "on",
-            "use_on_type_format": true,
-            "prettier": {
-                "allowed": false
-            }
-        },
-        "C++": {
-            "format_on_save": "on",
-            "use_on_type_format": true,
-            "prettier": {
-                "allowed": false
-            }
-        },
-        "Python": {
-            "language_servers": ["pyright", "ruff"],
-            "format_on_save": "on",
-            "formatter": [
-                {
-                    "code_actions": {
-                        "source.fixAll.ruff": true,
-                        "source.organiseImports.ruff": true
-                    }
-                },
-                {
-                    "language_server": {
-                        "name": "ruff"
-                    }
-                }
-            ]
+    {
+        "context": "Pane",
+        "bindings": {
+            // JetBrains
+            "ctrl-alt-left": "pane::GoBack",
+            "ctrl-alt-right": "pane::GoForward",
+            // My stuff
+            "alt-1": "workspace::ToggleLeftDock",
+            "alt-2": "project_panel::ToggleFocus",
+            "alt-3": "outline_panel::ToggleFocus",
+            "alt-4": "workspace::ToggleRightDock",
+            "alt-5": null,
+            "alt-6": null,
+            "alt-7": null,
+            "alt-8": null,
+            "alt-9": null,
+            "alt-0": null
         }
     },
-    "relative_line_numbers": false,
-    "vim_mode": false,
-    "vim": {
-        "default_mode": "normal",
-        "toggle_relative_line_numbers": true,
-        "use_system_clipboard": "always",
-        "use_multiline_find": false,
-        "use_smartcase_find": false,
-        "highlight_on_yank_duration": 200,
-        "custom_digraphs": {}
+    {
+        "context": "Editor",
+        "bindings": {
+            // JetBrains
+            "ctrl-shift-j": "editor::JoinLines",
+            "ctrl-d": "editor::DuplicateSelection",
+            "ctrl-y": "editor::DeleteLine",
+            "ctrl-m": "editor::ScrollCursorCenter",
+            "ctrl-pagedown": "editor::MovePageDown",
+            "ctrl-pageup": "editor::MovePageUp",
+            "ctrl-alt-enter": "editor::NewlineAbove",
+            "alt-shift-g": "editor::SplitSelectionIntoLines",
+            "alt-j": ["editor::SelectNext", { "replace_newest": false }],
+            "alt-shift-j": [
+                "editor::SelectPrevious",
+                { "replace_newest": false }
+            ],
+            "ctrl-/": ["editor::ToggleComments", { "advance_downwards": true }],
+            "shift-alt-up": "editor::MoveLineUp",
+            "shift-alt-down": "editor::MoveLineDown",
+            "ctrl-alt-l": "editor::Format",
+            "shift-f6": "editor::Rename",
+            // "ctrl-alt-left": "pane::GoBack",
+            // "ctrl-alt-right": "pane::GoForward",
+            "alt-f7": "editor::FindAllReferences",
+            "ctrl-alt-f7": "editor::FindAllReferences",
+            "ctrl-b": "editor::GoToDefinition",
+            "ctrl-alt-b": "editor::GoToDefinitionSplit",
+            "ctrl-shift-b": "editor::GoToTypeDefinition",
+            "ctrl-alt-shift-b": "editor::GoToTypeDefinitionSplit",
+            "f2": "editor::GoToDiagnostic",
+            "shift-f2": "editor::GoToPreviousDiagnostic",
+            "ctrl-alt-shift-down": "editor::GoToHunk",
+            "ctrl-alt-shift-up": "editor::GoToPreviousHunk",
+            "ctrl-alt-z": "git::Restore",
+            "ctrl-home": "editor::MoveToBeginning",
+            "ctrl-end": "editor::MoveToEnd",
+            "ctrl-shift-home": "editor::SelectToBeginning",
+            "ctrl-shift-end": "editor::SelectToEnd",
+            // My stuff
+            "ctrl-shift-d": "diagnostics::Deploy",
+            "ctrl-alt-left": "workspace::ActivatePaneLeft",
+            "ctrl-alt-right": "workspace::ActivatePaneRight",
+            "ctrl-0": "pane::ActivateLastItem"
+        }
     },
-    "file_types": {
-        "CMake": ["CMakeLists.txt"]
+    {
+        "context": "Editor && mode == full",
+        "bindings": {
+            // JetBrains
+            "ctrl-f12": "outline::Toggle",
+            "alt-7": "outline::Toggle",
+            // "ctrl-shift-n": "file_finder::Toggle",
+            "ctrl-g": "go_to_line::Toggle",
+            "alt-enter": "editor::ToggleCodeActions"
+        }
     },
-    "auto_install_extensions": {
-        "basher": true,
-        "csv": true,
-        "docker-compose": true,
-        "dockerfile": true,
-        "ini": true,
-        "intellij-newui-theme": true,
-        "make": true,
-        "neocmake": true,
-        "odin": true,
-        "toml": true,
-        "html": true,
-        "zig": true,
-        "ruff": true,
-        "git-firefly": true
+    {
+        "context": "Editor && renaming",
+        "bindings": {
+            // My stuff
+            "enter": "editor::ConfirmRename"
+        }
     },
-    "lsp": {
-        "pyright": {
-            "settings": {
-                "python.analysis": {
-                    "diagnosticMode": "workspace",
-                    "typeCheckingMode": "standard"
-                },
-                "python": {
-                    "pythonPath": ".venv/Scripts/python;"
-                }
-            }
+    {
+        "context": "Editor && showing_completions",
+        "bindings": {
+            // My stuff
+            "enter": "editor::ConfirmCompletion",
+            "tab": "editor::ComposeCompletion"
+        }
+    },
+    {
+        "context": "Editor && multibuffer",
+        "bindings": {
+            // My stuff
+            "ctrl-alt-enter": "editor::OpenExcerpts"
+        }
+    },
+    {
+        "context": "ProjectPanel",
+        "bindings": {
+            // JetBrains
+            "enter": "project_panel::Open",
+            "backspace": ["project_panel::Trash", { "skip_prompt": false }],
+            "delete": ["project_panel::Trash", { "skip_prompt": false }],
+            "shift-delete": ["project_panel::Delete", { "skip_prompt": false }],
+            "shift-f6": "project_panel::Rename"
+        }
+    },
+    {
+        "context": "BufferSearchBar",
+        "bindings": {
+            // My stuff
+            "enter": "search::SelectNextMatch",
+            "shift-enter": "search::SelectPreviousMatch",
+            "ctrl-r": "search::ToggleReplace"
+        }
+    },
+    {
+        "context": "Terminal",
+        "bindings": {
+            // My stuff
+            "ctrl-shift-t": "workspace::NewTerminal",
+            "ctrl-w": "pane::CloseActiveItem"
         }
     }
-}
+]
