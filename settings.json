@@ -69,7 +69,7 @@
         "default_width": 480,
         "default_height": 320,
         "default_model": {
-            "provider": "zed.dev",
+            "provider": "anthropic",
             "model": "claude-3-7-sonnet-latest"
         }
     },
@@ -85,9 +85,14 @@
     },
     "auto_update": true,
     "terminal": {
-        "shell": "system",
+        "shell": {
+            "with_arguments": {
+                "program": "cmd.exe",
+                "args": ["/k", "C:\\tools\\Cmder\\vendor\\init.bat"]
+            }
+        },
         "dock": "bottom",
-        "default_height": 320,
+        "default_height": 480,
         "max_scroll_history_lines": 100000
     },
     "languages": {
@@ -104,6 +109,23 @@
             "prettier": {
                 "allowed": false
             }
+        },
+        "Python": {
+            "language_servers": ["pyright", "ruff"],
+            "format_on_save": "on",
+            "formatter": [
+                {
+                    "code_actions": {
+                        "source.fixAll.ruff": true,
+                        "source.organiseImports.ruff": true
+                    }
+                },
+                {
+                    "language_server": {
+                        "name": "ruff"
+                    }
+                }
+            ]
         }
     },
     "relative_line_numbers": false,
@@ -133,7 +155,8 @@
         "toml": true,
         "html": true,
         "zig": true,
-        "ruff": true
+        "ruff": true,
+        "git-firefly": true
     },
     "lsp": {
         "pyright": {
