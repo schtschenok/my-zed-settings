@@ -50,8 +50,8 @@
         "context": "Pane",
         "bindings": {
             // JetBrains
-            "ctrl-alt-left": "pane::GoBack",
-            "ctrl-alt-right": "pane::GoForward",
+            // "ctrl-alt-left": "pane::GoBack",
+            // "ctrl-alt-right": "pane::GoForward",
             // My stuff
             "alt-1": "workspace::ToggleLeftDock",
             "alt-2": "project_panel::ToggleFocus",
