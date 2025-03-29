@@ -69,7 +69,7 @@
         "default_width": 480,
         "default_height": 320,
         "default_model": {
-            "provider": "anthropic",
+            "provider": "zed.dev",
             "model": "claude-3-7-sonnet-latest"
         }
     },
@@ -85,12 +85,7 @@
     },
     "auto_update": true,
     "terminal": {
-        "shell": {
-            "with_arguments": {
-                "program": "cmd.exe",
-                "args": ["/k", "C:\\tools\\Cmder\\vendor\\init.bat"]
-            }
-        },
+        "shell": "system",
         "dock": "bottom",
         "default_height": 480,
         "max_scroll_history_lines": 100000
@@ -166,7 +161,7 @@
                     "typeCheckingMode": "standard"
                 },
                 "python": {
-                    "pythonPath": ".venv/Scripts/python"
+                    "pythonPath": ".venv/Scripts/python;"
                 }
             }
         }
