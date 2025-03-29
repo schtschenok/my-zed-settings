@@ -111,8 +111,10 @@
             "formatter": [
                 {
                     "code_actions": {
+                        // Fix all auto-fixable lint violations
                         "source.fixAll.ruff": true,
-                        "source.organiseImports.ruff": true
+                        // Organize imports
+                        "source.organizeImports.ruff": false
                     }
                 },
                 {
@@ -158,10 +160,22 @@
             "settings": {
                 "python.analysis": {
                     "diagnosticMode": "workspace",
-                    "typeCheckingMode": "standard"
+                    "typeCheckingMode": "strict"
                 },
                 "python": {
-                    "pythonPath": ".venv/Scripts/python;"
+                    "pythonPath": ".venv/bin/python"
+                }
+            }
+        },
+        "ruff": {
+            "initialization_options": {
+                "settings": {
+                    "lineLength": 160,
+                    "showSyntaxErrors": false,
+                    "lint": {
+                        "select": ["ALL"],
+                        "ignore": ["D", "S101", "E501", "T201"]
+                    }
                 }
             }
         }
