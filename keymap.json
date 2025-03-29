@@ -2,8 +2,66 @@
     {
         "bindings": {
             // JetBrains
-            "ctrl-alt-s": "zed::OpenSettings",
-            "ctrl-alt-k": "zed::OpenKeymap"
+            // "ctrl-alt-s": "zed::OpenSettings",
+            // "ctrl-alt-k": "zed::OpenKeymap"
+        }
+    },
+    {
+        "context": "Workspace",
+        "bindings": {
+            // JetBrains
+            // "ctrl-shift-n": "file_finder::Toggle",
+            "ctrl-shift-a": "command_palette::Toggle",
+            "ctrl-alt-shift-n": "project_symbols::Toggle",
+            "ctrl-e": "tab_switcher::Toggle",
+            // My stuff
+            "shift shift": "project_symbols::Toggle",
+            "alt-t": "terminal_panel::ToggleFocus",
+            "ctrl-r": "task::Rerun",
+            "ctrl-t": "file_finder::Toggle",
+            "ctrl-1": ["pane::ActivateItem", 0],
+            "ctrl-2": ["pane::ActivateItem", 1],
+            "ctrl-3": ["pane::ActivateItem", 2],
+            "ctrl-4": ["pane::ActivateItem", 3],
+            "ctrl-5": ["pane::ActivateItem", 4],
+            "ctrl-6": ["pane::ActivateItem", 5],
+            "ctrl-7": ["pane::ActivateItem", 6],
+            "ctrl-8": ["pane::ActivateItem", 7],
+            "ctrl-9": ["pane::ActivateItem", 8],
+            "ctrl-0": "pane::ActivateLastItem",
+            "alt-1": "workspace::ToggleLeftDock",
+            "alt-2": "project_panel::ToggleFocus",
+            "alt-3": "outline_panel::ToggleFocus",
+            "alt-4": "workspace::ToggleRightDock",
+            "alt-5": null,
+            "alt-6": null,
+            "alt-7": null,
+            "alt-8": null,
+            "alt-9": null,
+            "alt-0": null,
+            "ctrl-alt-left": "workspace::ActivatePaneLeft",
+            "ctrl-alt-right": "workspace::ActivatePaneRight",
+            "ctrl-alt-j": "workspace::ActivatePaneLeft",
+            "ctrl-alt-k": "workspace::ActivatePaneRight"
+        }
+    },
+    {
+        "context": "Pane",
+        "bindings": {
+            // JetBrains
+            "ctrl-alt-left": "pane::GoBack",
+            "ctrl-alt-right": "pane::GoForward",
+            // My stuff
+            "alt-1": "workspace::ToggleLeftDock",
+            "alt-2": "project_panel::ToggleFocus",
+            "alt-3": "outline_panel::ToggleFocus",
+            "alt-4": "workspace::ToggleRightDock",
+            "alt-5": null,
+            "alt-6": null,
+            "alt-7": null,
+            "alt-8": null,
+            "alt-9": null,
+            "alt-0": null
         }
     },
     {
@@ -28,8 +86,8 @@
             "shift-alt-down": "editor::MoveLineDown",
             "ctrl-alt-l": "editor::Format",
             "shift-f6": "editor::Rename",
-            "ctrl-alt-left": "pane::GoBack",
-            "ctrl-alt-right": "pane::GoForward",
+            // "ctrl-alt-left": "pane::GoBack",
+            // "ctrl-alt-right": "pane::GoForward",
             "alt-f7": "editor::FindAllReferences",
             "ctrl-alt-f7": "editor::FindAllReferences",
             "ctrl-b": "editor::GoToDefinition",
@@ -46,7 +104,10 @@
             "ctrl-shift-home": "editor::SelectToBeginning",
             "ctrl-shift-end": "editor::SelectToEnd",
             // My stuff
-            "ctrl-shift-d": "diagnostics::Deploy"
+            "ctrl-shift-d": "diagnostics::Deploy",
+            "ctrl-alt-left": "workspace::ActivatePaneLeft",
+            "ctrl-alt-right": "workspace::ActivatePaneRight",
+            "ctrl-0": "pane::ActivateLastItem"
         }
     },
     {
@@ -55,72 +116,9 @@
             // JetBrains
             "ctrl-f12": "outline::Toggle",
             "alt-7": "outline::Toggle",
-            "ctrl-shift-n": "file_finder::Toggle",
+            // "ctrl-shift-n": "file_finder::Toggle",
             "ctrl-g": "go_to_line::Toggle",
             "alt-enter": "editor::ToggleCodeActions"
-        }
-    },
-    {
-        "context": "Workspace",
-        "bindings": {
-            // JetBrains
-            "ctrl-shift-n": "file_finder::Toggle",
-            "ctrl-shift-a": "command_palette::Toggle",
-            "ctrl-alt-shift-n": "project_symbols::Toggle",
-            "ctrl-e": "tab_switcher::Toggle",
-            // My stuff
-            "shift shift": "project_symbols::Toggle",
-            "ctrl-t": "terminal_panel::ToggleFocus",
-            "ctrl-1": ["pane::ActivateItem", 0],
-            "ctrl-2": ["pane::ActivateItem", 1],
-            "ctrl-3": ["pane::ActivateItem", 2],
-            "ctrl-4": ["pane::ActivateItem", 3],
-            "ctrl-5": ["pane::ActivateItem", 4],
-            "ctrl-6": ["pane::ActivateItem", 5],
-            "ctrl-7": ["pane::ActivateItem", 6],
-            "ctrl-8": ["pane::ActivateItem", 7],
-            "ctrl-9": ["pane::ActivateItem", 8],
-            "ctrl-0": "pane::ActivateLastItem",
-            "alt-1": "workspace::ToggleLeftDock",
-            "alt-2": "project_panel::ToggleFocus",
-            "alt-3": "outline_panel::ToggleFocus",
-            "alt-4": "workspace::ToggleRightDock",
-            "alt-5": null,
-            "alt-6": null,
-            "alt-7": null,
-            "alt-8": null,
-            "alt-9": null,
-            "alt-0": null
-        }
-    },
-    {
-        "context": "Pane",
-        "bindings": {
-            // JetBrains
-            "ctrl-alt-left": "pane::GoBack",
-            "ctrl-alt-right": "pane::GoForward",
-            // My stuff
-            "alt-1": "workspace::ToggleLeftDock",
-            "alt-2": "project_panel::ToggleFocus",
-            "alt-3": "outline_panel::ToggleFocus",
-            "alt-4": "workspace::ToggleRightDock",
-            "alt-5": null,
-            "alt-6": null,
-            "alt-7": null,
-            "alt-8": null,
-            "alt-9": null,
-            "alt-0": null
-        }
-    },
-    {
-        "context": "ProjectPanel",
-        "bindings": {
-            // JetBrains
-            "enter": "project_panel::Open",
-            "backspace": ["project_panel::Trash", { "skip_prompt": false }],
-            "delete": ["project_panel::Trash", { "skip_prompt": false }],
-            "shift-delete": ["project_panel::Delete", { "skip_prompt": false }],
-            "shift-f6": "project_panel::Rename"
         }
     },
     {
@@ -136,6 +134,24 @@
             // My stuff
             "enter": "editor::ConfirmCompletion",
             "tab": "editor::ComposeCompletion"
+        }
+    },
+    {
+        "context": "Editor && multibuffer",
+        "bindings": {
+            // My stuff
+            "ctrl-alt-enter": "editor::OpenExcerpts"
+        }
+    },
+    {
+        "context": "ProjectPanel",
+        "bindings": {
+            // JetBrains
+            "enter": "project_panel::Open",
+            "backspace": ["project_panel::Trash", { "skip_prompt": false }],
+            "delete": ["project_panel::Trash", { "skip_prompt": false }],
+            "shift-delete": ["project_panel::Delete", { "skip_prompt": false }],
+            "shift-f6": "project_panel::Rename"
         }
     },
     {
